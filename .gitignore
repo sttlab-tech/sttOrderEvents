@@ -1,0 +1,5 @@
+.env
+*secrets.yml
+*secrets.yaml
+.DS_Store
+*.bak

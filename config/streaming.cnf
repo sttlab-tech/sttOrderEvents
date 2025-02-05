@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="StreamingConfiguration" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="name">sttOrderEvents_es_orderevents</value>
+        <value name="description">es_orderevents</value>
+        <value name="package">sttOrderEvents</value>
+        <value name="type">Kafka</value>
+        <value name="host">es-demo-kafka-bootstrap-tools.apps.678663c1feba7dc9c41f356d.ocp.techzone.ibm.com:443</value>
+        <value name="clientId">msr_orderevents_e2e13b21a3</value>
+        <value name="other_properties">sasl.mechanism=SCRAM-SHA-512
+sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username='wmio' password='[*****]' ;</value>
+        <value name="other_runtime_properties">streaming.consumer.validate.consumers.not.greater.than.partitions=true
+sasl.mechanism=SCRAM-SHA-512
+sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username='wmio' password='[*****]' ;
+streaming.client.publish.mode=asynchronous</value>
+        <value name="enabled">true</value>
+        <value name="securityProtocol">SASL_SSL</value>
+        <value name="truststoreAlias">es_truststore</value>
+        <value name="keystoreAlias"></value>
+        <null name="keystoreKeyAlias"/>
+        <array name="subjects" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="referenceId">CustomerEventSpec</value>
+            <value name="topicName">CUSTOMERS</value>
+            <record name="keyCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">STRING</value>
+              <value name="type_display">String</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                </array>
+              </record>
+              <value name="charsetName">UTF-8</value>
+            </record>
+            <record name="valueCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">JSON</value>
+              <value name="type_display">JSON</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">documentTypeName</value>
+                    <value name="value">eu.sttlab.orderevents.doctypes:CustomerEvent</value>
+                  </record>
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">schema</value>
+                    <null name="value"/>
+                  </record>
+                </array>
+              </record>
+              <value name="documentTypeName">eu.sttlab.orderevents.doctypes:CustomerEvent</value>
+              <value name="charsetName">UTF-8</value>
+              <null name="schema"/>
+            </record>
+            <value name="aliasName">sttOrderEvents_es_orderevents</value>
+          </record>
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="referenceId">LargeOrderEventSpec</value>
+            <value name="topicName">LARGE.ORDERS</value>
+            <record name="keyCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">STRING</value>
+              <value name="type_display">String</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                </array>
+              </record>
+              <value name="charsetName">UTF-8</value>
+            </record>
+            <record name="valueCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">JSON</value>
+              <value name="type_display">JSON</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">documentTypeName</value>
+                    <value name="value">eu.sttlab.orderevents.doctypes:LargeOrderEvent</value>
+                  </record>
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">schema</value>
+                    <null name="value"/>
+                  </record>
+                </array>
+              </record>
+              <value name="documentTypeName">eu.sttlab.orderevents.doctypes:LargeOrderEvent</value>
+              <value name="charsetName">UTF-8</value>
+              <null name="schema"/>
+            </record>
+            <value name="aliasName">sttOrderEvents_es_orderevents</value>
+          </record>
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="referenceId">OrderEventSpec</value>
+            <value name="topicName">ORDERS</value>
+            <record name="keyCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">STRING</value>
+              <value name="type_display">String</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                </array>
+              </record>
+              <value name="charsetName">UTF-8</value>
+            </record>
+            <record name="valueCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">JSON</value>
+              <value name="type_display">JSON</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">documentTypeName</value>
+                    <value name="value">eu.sttlab.orderevents.doctypes:OrderEvent</value>
+                  </record>
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">schema</value>
+                    <null name="value"/>
+                  </record>
+                </array>
+              </record>
+              <value name="documentTypeName">eu.sttlab.orderevents.doctypes:OrderEvent</value>
+              <value name="charsetName">UTF-8</value>
+              <null name="schema"/>
+            </record>
+            <value name="aliasName">sttOrderEvents_es_orderevents</value>
+          </record>
+        </array>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>
