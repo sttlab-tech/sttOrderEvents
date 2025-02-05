@@ -3,3 +3,5 @@
 *secrets.yaml
 .DS_Store
 *.bak
+resources/.$diagrams.drawio.bkp
+config/streaming.cnf
